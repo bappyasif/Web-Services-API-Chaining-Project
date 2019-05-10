@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteCollectionEntity>
-   <description>Just Trying A Suite Collection</description>
+   <description>Just Trying</description>
    <name>New Test Suite Collection</name>
    <tag></tag>
    <executionMode>SEQUENTIAL</executionMode>
@@ -13,7 +13,7 @@
             <runConfigurationId>Web Service</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
-         <testSuiteEntity>Test Suites/DD Test Suite Example/Data Driven Test Suite</testSuiteEntity>
+         <testSuiteEntity>Test Suites/Web Services/Web Services Test Suite</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
          <configuration>
@@ -21,8 +21,8 @@
             <profileName>default</profileName>
             <runConfigurationId>Web Service</runConfigurationId>
          </configuration>
-         <runEnabled>true</runEnabled>
-         <testSuiteEntity>Test Suites/Web Services/Web Services Test Suite</testSuiteEntity>
+         <runEnabled>false</runEnabled>
+         <testSuiteEntity>Test Suites/DD Test Suite Example/Data Driven Test Suite</testSuiteEntity>
       </TestSuiteRunConfiguration>
    </testSuiteRunConfigurations>
 </TestSuiteCollectionEntity>

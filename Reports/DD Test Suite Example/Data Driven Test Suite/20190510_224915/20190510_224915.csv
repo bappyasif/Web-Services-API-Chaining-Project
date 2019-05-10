@@ -1,0 +1,20 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+Data Driven Test Suite,,,2019-05-10 22:49:18,2019-05-10 22:49:28,9.574s,PASSED
+,,,,,,
+Test Cases/Data Driven Test Examples/New DD Test Case,,Data Driven Test Case,2019-05-10 22:49:19,2019-05-10 22:49:25,6.243s,PASSED
+"println(""Country Name : "" + CountryCode)",,,2019-05-10 22:49:19,2019-05-10 22:49:19,0.007s,PASSED
+"println(""Capital Name : "" + CapitalCity)",,,2019-05-10 22:49:19,2019-05-10 22:49:19,0.002s,PASSED
+"println(""Currency Name : "" + CurrencyName)",,,2019-05-10 22:49:19,2019-05-10 22:49:19,0.001s,PASSED
+"capitalResponse = sendRequest(findTestObject(""API Data Driven Sample/New SOAP API Request For Country Capital"", [""isoCodeForCountry"":CountryCode]))",,,2019-05-10 22:49:19,2019-05-10 22:49:23,4.093s,PASSED
+"verifyElementText(capitalResponse, ""CapitalCityResponse.CapitalCityResult"", CapitalCity)",,,2019-05-10 22:49:23,2019-05-10 22:49:23,0.288s,PASSED
+"currencyResponse = sendRequest(findTestObject(""API Data Driven Sample/New SOAP Request For Country Currency"", [""countryCode"":CountryCode]))",,,2019-05-10 22:49:23,2019-05-10 22:49:25,1.281s,PASSED
+"verifyElementText(currencyResponse, ""CountryCurrencyResponse.CountryCurrencyResult.sName"", CurrencyName)",,,2019-05-10 22:49:25,2019-05-10 22:49:25,0.039s,PASSED
+,,,,,,
+Test Cases/Data Driven Test Examples/New DD Test Case,,Data Driven Test Case,2019-05-10 22:49:25,2019-05-10 22:49:28,2.817s,PASSED
+"println(""Country Name : "" + CountryCode)",,,2019-05-10 22:49:25,2019-05-10 22:49:25,0.001s,PASSED
+"println(""Capital Name : "" + CapitalCity)",,,2019-05-10 22:49:25,2019-05-10 22:49:25,0.001s,PASSED
+"println(""Currency Name : "" + CurrencyName)",,,2019-05-10 22:49:25,2019-05-10 22:49:25,0.001s,PASSED
+"capitalResponse = sendRequest(findTestObject(""API Data Driven Sample/New SOAP API Request For Country Capital"", [""isoCodeForCountry"":CountryCode]))",,,2019-05-10 22:49:25,2019-05-10 22:49:26,1.339s,PASSED
+"verifyElementText(capitalResponse, ""CapitalCityResponse.CapitalCityResult"", CapitalCity)",,,2019-05-10 22:49:26,2019-05-10 22:49:26,0.032s,PASSED
+"currencyResponse = sendRequest(findTestObject(""API Data Driven Sample/New SOAP Request For Country Currency"", [""countryCode"":CountryCode]))",,,2019-05-10 22:49:26,2019-05-10 22:49:28,1.392s,PASSED
+"verifyElementText(currencyResponse, ""CountryCurrencyResponse.CountryCurrencyResult.sName"", CurrencyName)",,,2019-05-10 22:49:28,2019-05-10 22:49:28,0.032s,PASSED

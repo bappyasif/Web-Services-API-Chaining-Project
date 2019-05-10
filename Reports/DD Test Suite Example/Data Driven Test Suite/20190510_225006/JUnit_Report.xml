@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Data Driven Test Suite" time="9" tests="2" failures="0" errors="0">
+   <testsuite name="Data Driven Test Suite" tests="2" failures="0" errors="0" time="9" timestamp="2019-05-10 22:50:09" hostname="BappY - Toruk-Macto" id="Test Suites/DD Test Suite Example/Data Driven Test Suite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="E:\\Katalon Studio Safe Space\\WebServices API Chaining Example\\Reports\\DD Test Suite Example\\Data Driven Test Suite\\20190510_225006"/>
+         <property name="logFiles" value="E:\\Katalon Studio Safe Space\\WebServices API Chaining Example\\Reports\\DD Test Suite Example\\Data Driven Test Suite\\20190510_225006\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="BappY - Toruk-Macto"/>
+         <property name="hostAddress" value="10.244.50.2"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="6.0.4.7"/>
+      </properties>
+      <testcase name="Test Cases/Data Driven Test Examples/New DD Test Case" classname="Test Cases/Data Driven Test Examples/New DD Test Case" status="PASSED">
+         <system-out><![CDATA[2019-05-10 22:50:10 - [TEST_CASE][PASSED] - Test Cases/Data Driven Test Examples/New DD Test Case: Test Cases/Data Driven Test Examples/New DD Test Case
+
+2019-05-10 22:50:10 - [TEST_STEP][PASSED] - println("Country Name : " + CountryCode): null
+
+2019-05-10 22:50:10 - [TEST_STEP][PASSED] - println("Capital Name : " + CapitalCity): null
+
+2019-05-10 22:50:10 - [TEST_STEP][PASSED] - println("Currency Name : " + CurrencyName): null
+
+2019-05-10 22:50:10 - [TEST_STEP][PASSED] - capitalResponse = sendRequest(findTestObject("API Data Driven Sample/New SOAP API Request For Country Capital", ["isoCodeForCountry":CountryCode])): Send request successfully
+
+2019-05-10 22:50:14 - [MESSAGE][INFO] - HAR: E:\Katalon Studio Safe Space\WebServices API Chaining Example\Reports\DD Test Suite Example\Data Driven Test Suite\20190510_225006\requests\main\0.har
+
+2019-05-10 22:50:14 - [MESSAGE][PASSED] - Send request successfully
+
+2019-05-10 22:50:14 - [TEST_STEP][PASSED] - verifyElementText(capitalResponse, "CapitalCityResponse.CapitalCityResult", CapitalCity): Verify element text successfully
+
+2019-05-10 22:50:14 - [MESSAGE][PASSED] - Verify element text successfully
+
+2019-05-10 22:50:14 - [TEST_STEP][PASSED] - currencyResponse = sendRequest(findTestObject("API Data Driven Sample/New SOAP Request For Country Currency", ["countryCode":CountryCode])): Send request successfully
+
+2019-05-10 22:50:16 - [MESSAGE][INFO] - HAR: E:\Katalon Studio Safe Space\WebServices API Chaining Example\Reports\DD Test Suite Example\Data Driven Test Suite\20190510_225006\requests\main\1.har
+
+2019-05-10 22:50:16 - [MESSAGE][PASSED] - Send request successfully
+
+2019-05-10 22:50:16 - [TEST_STEP][PASSED] - verifyElementText(currencyResponse, "CountryCurrencyResponse.CountryCurrencyResult.sName", CurrencyName): Verify element text successfully
+
+2019-05-10 22:50:16 - [MESSAGE][PASSED] - Verify element text successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Data Driven Test Examples/New DD Test Case" classname="Test Cases/Data Driven Test Examples/New DD Test Case" status="PASSED">
+         <system-out><![CDATA[2019-05-10 22:50:16 - [TEST_CASE][PASSED] - Test Cases/Data Driven Test Examples/New DD Test Case: Test Cases/Data Driven Test Examples/New DD Test Case
+
+2019-05-10 22:50:16 - [TEST_STEP][PASSED] - println("Country Name : " + CountryCode): null
+
+2019-05-10 22:50:16 - [TEST_STEP][PASSED] - println("Capital Name : " + CapitalCity): null
+
+2019-05-10 22:50:16 - [TEST_STEP][PASSED] - println("Currency Name : " + CurrencyName): null
+
+2019-05-10 22:50:16 - [TEST_STEP][PASSED] - capitalResponse = sendRequest(findTestObject("API Data Driven Sample/New SOAP API Request For Country Capital", ["isoCodeForCountry":CountryCode])): Send request successfully
+
+2019-05-10 22:50:17 - [MESSAGE][INFO] - HAR: E:\Katalon Studio Safe Space\WebServices API Chaining Example\Reports\DD Test Suite Example\Data Driven Test Suite\20190510_225006\requests\main\2.har
+
+2019-05-10 22:50:17 - [MESSAGE][PASSED] - Send request successfully
+
+2019-05-10 22:50:17 - [TEST_STEP][PASSED] - verifyElementText(capitalResponse, "CapitalCityResponse.CapitalCityResult", CapitalCity): Verify element text successfully
+
+2019-05-10 22:50:17 - [MESSAGE][PASSED] - Verify element text successfully
+
+2019-05-10 22:50:17 - [TEST_STEP][PASSED] - currencyResponse = sendRequest(findTestObject("API Data Driven Sample/New SOAP Request For Country Currency", ["countryCode":CountryCode])): Send request successfully
+
+2019-05-10 22:50:18 - [MESSAGE][INFO] - HAR: E:\Katalon Studio Safe Space\WebServices API Chaining Example\Reports\DD Test Suite Example\Data Driven Test Suite\20190510_225006\requests\main\3.har
+
+2019-05-10 22:50:18 - [MESSAGE][PASSED] - Send request successfully
+
+2019-05-10 22:50:18 - [TEST_STEP][PASSED] - verifyElementText(currencyResponse, "CountryCurrencyResponse.CountryCurrencyResult.sName", CurrencyName): Verify element text successfully
+
+2019-05-10 22:50:18 - [MESSAGE][PASSED] - Verify element text successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-05-10 22:50:09 - [TEST_SUITE][PASSED] - Data Driven Test Suite: Test Cases/Data Driven Test Examples/New DD Test Case]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

@@ -1,0 +1,23 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+Web Services Test Suite,,This one will also interact with jenkins with Katalon Studio plugin available in Jenkins.,2019-05-10 20:56:27,2019-05-10 20:56:39,11.773s,PASSED
+,,,,,,
+Test Cases/REST API Chaining Request/API Chaining Test case,,it will try to update a user information and then compatre it in User List.,2019-05-10 20:56:28,2019-05-10 20:56:34,6.933s,PASSED
+"userList = sendRequest(findTestObject(""REST API Service Request/New Request For List Users""))",,,2019-05-10 20:56:29,2019-05-10 20:56:33,4.466s,PASSED
+jsonSlurper = new groovy.json.JsonSlurper(),,,2019-05-10 20:56:33,2019-05-10 20:56:33,0.010s,PASSED
+extractedValue = jsonSlurper.parseText(userList.getResponseBodyContent()),,,2019-05-10 20:56:33,2019-05-10 20:56:33,0.027s,PASSED
+foundUser = first_name,,,2019-05-10 20:56:33,2019-05-10 20:56:33,0.012s,PASSED
+"println(""Global Variable :  "" + UserName)",,,2019-05-10 20:56:33,2019-05-10 20:56:33,0.040s,PASSED
+"println(""Value Extracted :  "" + foundUser)",,,2019-05-10 20:56:33,2019-05-10 20:56:33,0.003s,PASSED
+UserName = foundUser,,,2019-05-10 20:56:33,2019-05-10 20:56:33,0.002s,PASSED
+"println(""Global Variable :  "" + UserName)",,,2019-05-10 20:56:33,2019-05-10 20:56:33,0.003s,PASSED
+"sendRequestAndVerify(findTestObject(""REST API Service Request/New Request For Update user""))",,,2019-05-10 20:56:33,2019-05-10 20:56:34,1.242s,PASSED
+,,,,,,
+Test Cases/SOAP API Chaining Request/Another Chaining Test Case,,Trying For Currency name,2019-05-10 20:56:34,2019-05-10 20:56:39,4.313s,PASSED
+"currencyName = sendRequest(findTestObject(""SOAP API Service Request/New SOAP API Request For Curency Info""))",,,2019-05-10 20:56:35,2019-05-10 20:56:37,1.977s,PASSED
+xmlResponse = responseBodyContent,,,2019-05-10 20:56:37,2019-05-10 20:56:37,0.306s,PASSED
+dataValue = XmlSlurper().parseText(xmlResponse),,,2019-05-10 20:56:37,2019-05-10 20:56:37,0.036s,PASSED
+valueExtracted = sISOCode.text(),,,2019-05-10 20:56:37,2019-05-10 20:56:37,0.013s,PASSED
+"println(""Extracted Value : "" + valueExtracted)",,,2019-05-10 20:56:37,2019-05-10 20:56:37,0.002s,PASSED
+currencyCode = valueExtracted,,,2019-05-10 20:56:37,2019-05-10 20:56:37,0.001s,PASSED
+"println(""Curren Global Variable Value  : "" + currencyCode)",,,2019-05-10 20:56:37,2019-05-10 20:56:37,0.001s,PASSED
+"sendRequestAndVerify(findTestObject(""SOAP API Service Request/New SOAP Request For Country Currency""))",,,2019-05-10 20:56:37,2019-05-10 20:56:39,1.734s,PASSED

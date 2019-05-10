@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Use Country Name API result and use it in Country Capital's Request for successful execition.</description>
+   <name>API Chaining Test Case</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c0efd974-c83f-49c9-a7b3-3914286e160b</testCaseGuid>
+</TestCaseEntity>

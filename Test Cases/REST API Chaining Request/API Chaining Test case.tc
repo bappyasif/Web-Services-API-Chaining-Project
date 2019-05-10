@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>it will try to update a user information and then compatre it in User List.</description>
+   <name>API Chaining Test case</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5125d95f-6211-46a0-8383-9c10623851d2</testCaseGuid>
+</TestCaseEntity>

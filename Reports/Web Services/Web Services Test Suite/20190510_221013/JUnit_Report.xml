@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Web Services Test Suite" time="17" tests="2" failures="0" errors="0">
+   <testsuite name="Web Services Test Suite" tests="2" failures="0" errors="0" time="17" timestamp="2019-05-10 22:10:16" hostname="BappY - Toruk-Macto" id="Test Suites/Web Services/Web Services Test Suite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="E:\\Katalon Studio Safe Space\\WebServices API Chaining Example\\Reports\\Web Services\\Web Services Test Suite\\20190510_221013"/>
+         <property name="logFiles" value="E:\\Katalon Studio Safe Space\\WebServices API Chaining Example\\Reports\\Web Services\\Web Services Test Suite\\20190510_221013\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="BappY - Toruk-Macto"/>
+         <property name="hostAddress" value="10.244.50.2"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="6.0.4.7"/>
+      </properties>
+      <testcase name="Test Cases/REST API Chaining Request/API Chaining Test case" classname="Test Cases/REST API Chaining Request/API Chaining Test case" status="PASSED">
+         <system-out><![CDATA[2019-05-10 22:10:17 - [TEST_CASE][PASSED] - Test Cases/REST API Chaining Request/API Chaining Test case: Test Cases/REST API Chaining Request/API Chaining Test case
+
+2019-05-10 22:10:19 - [TEST_STEP][PASSED] - userList = sendRequest(findTestObject("REST API Service Request/New Request For List Users")): Send request successfully
+
+2019-05-10 22:10:25 - [MESSAGE][INFO] - HAR: E:\Katalon Studio Safe Space\WebServices API Chaining Example\Reports\Web Services\Web Services Test Suite\20190510_221013\requests\main\0.har
+
+2019-05-10 22:10:25 - [MESSAGE][PASSED] - Send request successfully
+
+2019-05-10 22:10:25 - [TEST_STEP][PASSED] - jsonSlurper = new groovy.json.JsonSlurper(): null
+
+2019-05-10 22:10:25 - [TEST_STEP][PASSED] - extractedValue = jsonSlurper.parseText(userList.getResponseBodyContent()): null
+
+2019-05-10 22:10:25 - [TEST_STEP][PASSED] - foundUser = first_name: null
+
+2019-05-10 22:10:25 - [TEST_STEP][PASSED] - println("Global Variable :  " + UserName): null
+
+2019-05-10 22:10:25 - [TEST_STEP][PASSED] - println("Value Extracted :  " + foundUser): null
+
+2019-05-10 22:10:25 - [TEST_STEP][PASSED] - UserName = foundUser: null
+
+2019-05-10 22:10:25 - [TEST_STEP][PASSED] - println("Global Variable :  " + UserName): null
+
+2019-05-10 22:10:25 - [TEST_STEP][PASSED] - sendRequestAndVerify(findTestObject("REST API Service Request/New Request For Update user")): Send request and verify the response successfully
+
+2019-05-10 22:10:27 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2019-05-10 22:10:30 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2019-05-10 22:10:30 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2019-05-10 22:10:30 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "name", "Eve"): Verify element property value successfully
+
+2019-05-10 22:10:30 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2019-05-10 22:10:30 - [MESSAGE][PASSED] - Verify response successfully
+
+2019-05-10 22:10:30 - [MESSAGE][PASSED] - Send request and verify the response successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/SOAP API Chaining Request/Another Chaining Test Case" classname="Test Cases/SOAP API Chaining Request/Another Chaining Test Case" status="PASSED">
+         <system-out><![CDATA[2019-05-10 22:10:30 - [TEST_CASE][PASSED] - Test Cases/SOAP API Chaining Request/Another Chaining Test Case: Test Cases/SOAP API Chaining Request/Another Chaining Test Case
+
+2019-05-10 22:10:30 - [TEST_STEP][PASSED] - currencyName = sendRequest(findTestObject("SOAP API Service Request/New SOAP API Request For Curency Info")): Send request successfully
+
+2019-05-10 22:10:32 - [MESSAGE][INFO] - HAR: E:\Katalon Studio Safe Space\WebServices API Chaining Example\Reports\Web Services\Web Services Test Suite\20190510_221013\requests\main\1.har
+
+2019-05-10 22:10:32 - [MESSAGE][PASSED] - Send request successfully
+
+2019-05-10 22:10:32 - [TEST_STEP][PASSED] - xmlResponse = responseBodyContent: null
+
+2019-05-10 22:10:32 - [TEST_STEP][PASSED] - dataValue = XmlSlurper().parseText(xmlResponse): null
+
+2019-05-10 22:10:32 - [TEST_STEP][PASSED] - valueExtracted = sISOCode.text(): null
+
+2019-05-10 22:10:32 - [TEST_STEP][PASSED] - println("Extracted Value : " + valueExtracted): null
+
+2019-05-10 22:10:32 - [TEST_STEP][PASSED] - currencyCode = valueExtracted: null
+
+2019-05-10 22:10:32 - [TEST_STEP][PASSED] - println("Curren Global Variable Value  : " + currencyCode): null
+
+2019-05-10 22:10:32 - [TEST_STEP][PASSED] - sendRequestAndVerify(findTestObject("SOAP API Service Request/New SOAP Request For Country Currency")): Send request and verify the response successfully
+
+2019-05-10 22:10:34 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2019-05-10 22:10:34 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2019-05-10 22:10:34 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2019-05-10 22:10:34 - [TEST_STEP][PASSED] - verifyElementText(response, "CurrencyNameResponse.CurrencyNameResult", "Taka"): Verify element text successfully
+
+2019-05-10 22:10:34 - [MESSAGE][PASSED] - Verify element text successfully
+
+2019-05-10 22:10:34 - [MESSAGE][PASSED] - Verify response successfully
+
+2019-05-10 22:10:34 - [MESSAGE][PASSED] - Send request and verify the response successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-05-10 22:10:16 - [TEST_SUITE][PASSED] - Web Services Test Suite: Test Cases/SOAP API Chaining Request/Another Chaining Test Case]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

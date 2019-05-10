@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteCollectionEntity>
-   <description>Just Trying</description>
+   <description>Just Trying A Suite Collection</description>
    <name>New Test Suite Collection</name>
    <tag></tag>
    <executionMode>SEQUENTIAL</executionMode>
